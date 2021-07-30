@@ -6,7 +6,7 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public name: string = 'test';
+  public name: string = '';
   public dataList: { name: string; status: boolean }[] = [];
 
   public onAdd() {
