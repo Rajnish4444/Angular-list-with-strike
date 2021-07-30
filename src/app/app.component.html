@@ -1,0 +1,12 @@
+<input [(ngModel)] ="name" type="text">
+<button (click) = "onAdd()">
+  Add Item
+</button>
+
+<ul>
+  <li *ngFor="let item of dataList">
+    <div [class.isDone]="!item.status" (click)="strikeThis(item)">
+      {{item.name}}
+    </div>
+  </li>
+</ul>
